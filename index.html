@@ -10,17 +10,58 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+
+		<script>
+		$(function(){
+			$(document.body).bind('mouseup', function(e) {
+				var selection;
+				if (window.getSelection) {
+					selection = window.getSelection();
+				} else if (document.selection) {
+					selection = document.selection.createRange();
+				}
+
+				selection.toString() != '' && alert('"' + selection.toString() +
+				'" was selected at ' + e.pageX + '/' + e.pageY);
+			});
+		});
+				
+		</script>
+
     </head>
-    <body>
+    <body onselect="myFunction()">
+	<div onselect="myFunction()">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
+		<h1>chaiwen chou</h1>
+
+		<div class="type1">
+			Line hornswaggle spike run a shot across the bow black spot coffer clipper keelhaul tack crow's nest. Wench quarter smartly Barbary Coast fire ship run a shot across the bow Jack Ketch haul wind parrel walk the plank. Keel pirate Spanish Main sloop scourge of the seven seas grog crimp boom weigh anchor yawl.
+Warp me trysail cackle fruit matey fluke pink marooned scuppers chase guns. Scuppers bilge heave to matey hail-shot scallywag tack furl scuttle parley. Admiral of the Black yawl come about Jack Tar parley belay bilge bring a spring upon her cable cog scurvy.
+Squiffy quarterdeck Sea Legs hands lugger tender execution dock fore tackle Letter of Marque. Run a rig carouser interloper cackle fruit Sail ho fathom bring a spring upon her cable long clothes Jolly Roger pressgang. Tender measured fer yer chains mizzenmast Pirate Round reef parley walk the plank lass run a rig spike.
+		</div>
+
+		<div class="type2">
+			Line hornswaggle spike run a shot across the bow black spot coffer clipper keelhaul tack crow's nest. Wench quarter smartly Barbary Coast fire ship run a shot across the bow Jack Ketch haul wind parrel walk the plank. Keel pirate Spanish Main sloop scourge of the seven seas grog crimp boom weigh anchor yawl.
+Warp me trysail cackle fruit matey fluke pink marooned scuppers chase guns. Scuppers bilge heave to matey hail-shot scallywag tack furl scuttle parley. Admiral of the Black yawl come about Jack Tar parley belay bilge bring a spring upon her cable cog scurvy.
+Squiffy quarterdeck Sea Legs hands lugger tender execution dock fore tackle Letter of Marque. Run a rig carouser interloper cackle fruit Sail ho fathom bring a spring upon her cable long clothes Jolly Roger pressgang. Tender measured fer yer chains mizzenmast Pirate Round reef parley walk the plank lass run a rig spike.		</div>
+		<div class="type4">
+			Line hornswaggle spike run a shot across the bow black spot coffer clipper keelhaul tack crow's nest. Wench quarter smartly Barbary Coast fire ship run a shot across the bow Jack Ketch haul wind parrel walk the plank. Keel pirate Spanish Main sloop scourge of the seven seas grog crimp boom weigh anchor yawl.
+Warp me trysail cackle fruit matey fluke pink marooned scuppers chase guns. Scuppers bilge heave to matey hail-shot scallywag tack furl scuttle parley. Admiral of the Black yawl come about Jack Tar parley belay bilge bring a spring upon her cable cog scurvy.
+Squiffy quarterdeck Sea Legs hands lugger tender execution dock fore tackle Letter of Marque. Run a rig carouser interloper cackle fruit Sail ho fathom bring a spring upon her cable long clothes Jolly Roger pressgang. Tender measured fer yer chains mizzenmast Pirate Round reef parley walk the plank lass run a rig spike.
+		</div>
+
+		</div>
+
+
+		
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

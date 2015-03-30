@@ -9,11 +9,19 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+@import url(http://fonts.googleapis.com/css?family=Nixie+One|Cutive+Mono|Oldenburg|NTR);
+
+@import url(http://fonts.googleapis.com/css?family=Nixie+One&effect=3d|3d-float);
 
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+}
+
+body {
+	font-family: 'Nixe One';
+	font-size: 24px;
 }
 
 /*
@@ -25,12 +33,14 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
+	color: red;
+    background: #632ACB;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+	color: red;
+    background: #632ACB;
     text-shadow: none;
 }
 
@@ -95,7 +105,36 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+	h1 {
+		font-size: 100px;
+		margin-top: 0;
+		font-family: 'Oldenburg', cursive;
+		letter-spacing: -2px;
+	
+		color: #f8f8f8;
 
+		-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), color-stop(20%, rgba(0,0,0,0.2)), to(rgba(0,0,0,1)));
+		text-shadow: 0 3px 0 #bcbcbc;
+	}
+	
+
+
+.type1 {
+	font-family: 'Nixie One', cursive;
+
+}
+
+.type2 {
+	font-family: 'Cutive Mono';
+}
+
+.type3 {
+	font-family: 'Oldenburg', cursive;
+}
+
+.type4 {
+	font-family: 'NTR', sans-serif;
+}
 
 
 
