@@ -32,6 +32,7 @@ body {
  * Customize the background color to match your design.
  */
 
+/*
 ::-moz-selection {
 	color: red;
     background: #632ACB;
@@ -42,7 +43,7 @@ body {
 	color: red;
     background: #632ACB;
     text-shadow: none;
-}
+}*/
 
 /*
  * A better looking default horizontal rule
