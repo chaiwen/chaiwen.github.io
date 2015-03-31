@@ -137,7 +137,12 @@ textarea {
 	font-family: 'NTR', sans-serif;
 }
 .type5 {
-
+	font-family: 'museo', sans-serif;
+	font-weight: 300;
+}
+.type6 {
+	font-family: 'museo', sans-serif;
+	font-weight: 700;
 }
 
 
