@@ -21,7 +21,7 @@ html {
 
 body {
 	font-family: 'Nixe One';
-	font-size: 24px;
+	font-size: 16px;
 }
 
 /*
@@ -136,7 +136,9 @@ textarea {
 .type4 {
 	font-family: 'NTR', sans-serif;
 }
+.type5 {
 
+}
 
 
 
