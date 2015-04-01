@@ -37,13 +37,23 @@ var moveS = function(e) {
 			"left": x,
 			"top": y,
 			"background-color": dcolor,
-			"width": "20px",
-			"height": "20px",
+			"background-repeat": "no-repeat",
+			"width": "25px",
+			"height": "25px",
 			"float": "left",
-			"padding": "5px",
+			"padding": "0px",
 			"z-index": z
 			});
 	$(document.body).append($div);
+	var $cdiv = $('<div>').css({
+			"float": "left",
+			"background-image": "url('http://www.chaiwen.com/adoptchicken.gif')",
+			"background-repeat": "no-repeat",
+			"width": "25px",
+			"height": "25px"
+	});
+	$('#mainContainer').prepend($cdiv);
+
 	console.log(x);
 	console.log(y);
 	z--;
