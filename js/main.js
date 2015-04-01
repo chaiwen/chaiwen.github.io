@@ -1,5 +1,6 @@
 var fgc = 0x000000;
 var bgc = 0xffffff;
+
 var first = true;
 var z = -1;
 var moveS = function(e) {
@@ -7,6 +8,8 @@ var moveS = function(e) {
 	fgc += 10000;
 	bgc -= 10000;
 	//reset
+	if (fgc >= 0xffffff) fgc = 0x000000;
+	if (bgc <= 0x000000) bgc = 0xffffff;
 
 	var ss = document.styleSheets[0];
 	if ("insertRule" in ss) {
@@ -15,14 +18,17 @@ var moveS = function(e) {
 		} else {
 			ss.deleteRule(0);
 		}
-		ss.insertRule('::selection {color: #'+fgc.toString(16)+
-				'; background: #'+bgc.toString(16)+';}', 0);
+		ss.insertRule('::selection {color: #' + fgc.toString(16) +
+				'; background: #' + bgc.toString(16) + ';}', 0);
 
 	}
 
-	console.log(bgc.toString(16));
-	console.log(bgc);
+	//console.log(bgc.toString(16));
+	//console.log(bgc);
 
+	var dc = Math.floor(Math.random() * 0xcccccc);
+	var dcolor = "#" + dc.toString(16);
+	console.log(dcolor);
 
 	var x = e.pageX + 'px';
 	var y = e.pageY + 'px';
@@ -30,9 +36,9 @@ var moveS = function(e) {
 			"position": "absolute",
 			"left": x,
 			"top": y,
-			"background-color": "#bbbbbb",
-			"width": "100px",
-			"height": "100px",
+			"background-color": dcolor,
+			"width": "20px",
+			"height": "20px",
 			"float": "left",
 			"padding": "5px",
 			"z-index": z

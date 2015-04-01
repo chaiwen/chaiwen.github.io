@@ -22,6 +22,8 @@ html {
 body {
 	font-family: 'Nixe One';
 	font-size: 16px;
+	margin: 0px;
+	height: 100%;
 }
 
 /*
@@ -118,8 +120,20 @@ textarea {
 		text-shadow: 0 3px 0 #bcbcbc;
 	}
 	
-
-
+#mainContainer {
+	height: 100%;
+	margin: 0 auto;
+}
+#main {
+	display: block;
+	background-color: #B593C5;
+	height: 200px;
+	width: 100%;
+	opacity: 0.5;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
 .type1 {
 	font-family: 'Nixie One', cursive;
 
