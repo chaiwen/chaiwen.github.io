@@ -9,21 +9,21 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-@import url(http://fonts.googleapis.com/css?family=Nixie+One|NTR);
+@import url(http://fonts.googleapis.com/css?family=Oldenburg|NTR);
 
-@import url(http://fonts.googleapis.com/css?family=Nixie+One&effect=3d|3d-float);
-
-html {
+html, body {
+	font-family: 'NTR';
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+
+	width: 100%;
+	height: 100%;
+	margin: 0px;
 }
 
-body {
-	font-family: 'NTR';
-	font-size: 16px;
-	margin: 0px;
-	height: 100%;
+#myCanvas {
+	position: absolute;
 }
 
 /*
@@ -117,7 +117,6 @@ textarea {
 		color: #f8f8f8;
 
 		-webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), color-stop(20%, rgba(0,0,0,0.2)), to(rgba(0,0,0,1)));
-		text-shadow: 0 3px 0 #bcbcbc;
 	}
 	
 #mainContainer {
@@ -137,10 +136,6 @@ textarea {
 
 .type4 {
 	font-family: 'NTR', sans-serif;
-}
-.type6 {
-	font-family: 'museo', sans-serif;
-	font-weight: 700;
 }
 
 
